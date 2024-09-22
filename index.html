@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="google-site-verification" content="y3itAQvxkKLCZQjy2WwJWY6jJjVnBktxG28kdXtHUWY" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>The Kingdom of Saudi Arabia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #1a1a2e, #196d3c);
+      color: #ffffff;
+    }
+    header {
+      background: linear-gradient(to right, #239050, #1b1b30);
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .menu-toggle {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .menu {
+      display: none;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      background-color: #296a31;
+      padding: 10px;
+      list-style-type: none;
+      margin: 0;
+      z-index: 1;
+    }
+
+    .menu li {
+      margin-bottom: 10px;
+    }
+
+    .menu li a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+
+    .main-content {
+      padding: 40px;
+    }
+
+    .welcome-message {
+        background: linear-gradient(to right, #239050, #1b1b30);
+      padding: 20px;
+      text-align: center;
+      border-radius: 15px;
+      margin-bottom: 140px;
+    }
+
+    .profile-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(38, 126, 69, 0.7); 
+      padding: 20px;
+      border-radius: 15px;
+      margin-bottom: 160px; 
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5); 
+      opacity: 0; 
+      transition: opacity 0.5s ease;
+    }
+
+    .profile-container.visible {
+      opacity: 1; 
+    }
+
+    .profile-image {
+      width: 40%; 
+      border-radius: 10px;
+    }
+
+    .profile-text {
+      width: 55%; 
+      padding-left: 20px;
+    }
+
+    footer {
+        background: linear-gradient(to right, #1d7441, #1b1b30);
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      border-top: 3px solid #ffffff;
+    }
+
+    footer p {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    footer a {
+      margin: 5px;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    footer a:hover {
+      transform: scale(1.1);
+      color: #feb47b;
+    }
+
+    .icon {
+      width: 40px;
+      transition: color 0.3s ease;
+    }
+  </style>
+  
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var menuToggle = document.querySelector('.menu-toggle');
+      var menu = document.querySelector('.menu');
+
+      menuToggle.addEventListener('click', function() {
+        menu.style.display = (menu.style.display === 'none') ? 'block' : 'none';
+      });
+
+      const profileContainers = document.querySelectorAll('.profile-container');
+
+      window.addEventListener('scroll', function() {
+        profileContainers.forEach(container => {
+          const rect = container.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom >= 0) {
+            container.classList.add('visible');
+          }
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <header>
+    <div class="logo">The Kingdom of Saudi Arabia</div>
+    <div>SAUDI LORM</div>
+    <div class="menu-toggle">&#9776;</div>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About the Kingdom</a></li>
+      <li><a href="#">Heritage and Culture</a></li>
+      <li><a href="#">Tourism</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </header>
+
+  <div class="main-content">
+    <div class="welcome-message">
+      <h2>Welcome to the Kingdom of Saudi Arabia</h2>
+      <p>The Kingdom of Saudi Arabia is considered one of the famous countries in the Arab and Islamic world, as it is a part of it, especially in politics and everything it needs. The Kingdom was founded in 1932 by King Abdulaziz Al Saud, and since then it has witnessed radical transformations in all aspects of life.</p>
+      <p>The history of the Kingdom is a long history of challenges and victories. Since the unification of the Kingdom, King Abdulaziz has worked to unify the various tribes and achieve security and stability. In subsequent years, the Kingdom set out towards growth and development, especially after the discovery of oil in the 1930s.</p>
+       <p>economy Saudi Arabia has become one of the largest economies in the world, with huge oil reserves. The Kingdom is considered one of the largest oil producers in the world, relying heavily on oil exports. However, the shift towards enlightenment of the economy began with Vision 2030, which focuses on oil dependence, and other education such as culture and technology..</p>
+       <img src="صنع_بالسعوديه-removebg-preview.png" alt="Made in Saudi Arabia" class="profile-image">
+      </div>
+
+  
+    <div class="profile-container">
+      <img src="king_1-removebg-preview.png" alt="King Abdulaziz" class="profile-image">
+      <div class="profile-text">
+        <h3>King Abdulaziz Al Saud</h3>
+        <p>King Abdulaziz Al Saud is the founder of modern Saudi Arabia. He ascended to the throne in 1932 after uniting the Kingdom through various challenges. He played a significant role in developing the country and transforming it into a modern state. He implemented comprehensive reforms in various fields, such as education, health, and transportation, and established many governmental institutions that contributed to nation-building.</p>
+        <p>King Abdulaziz was known for his wisdom and political acumen, achieving peace and stability in the country. He took bold steps to enhance relations with other nations, improving the Kingdom's standing on the international stage.</p>
+        <p>He passed away in 1953, but his legacy remains alive in the hearts of the Saudi people, as he is considered a symbol of unity and wise leadership.</p>
+        <p>Over the years, the Kingdom has continued to achieve further accomplishments, thanks to the foundations laid by King Abdulaziz, making it one of the most prominent countries in the world.</p>
+        <p>The Kingdom of Saudi Arabia always remembers his achievements and great history, as he is regarded as a role model in leadership and governance.</p>
+      </div>
+    </div>
+
+
+    <div class="profile-container">
+      <img src="ملك_سعود-removebg-preview.png" alt="King Saud" class="profile-image">
+      <div class="profile-text">
+        <h3>King Saud bin Abdulaziz</h3>
+        <p>King Saud bin Abdulaziz was the second king of Saudi Arabia, ascending to the throne after the death of his father, King Abdulaziz, in 1953. He was known for his efforts to develop the country and improve the living standards of its citizens.</p>
+        <p>During his reign, many developmental projects were implemented in various fields, including education, health, and infrastructure. He established numerous schools and hospitals, and improved the road and transportation networks in the Kingdom.</p>
+        <p>King Saud was also interested in culture and arts, supporting local arts and culture and encouraging the organization of cultural and artistic events.</p>
+        <p>Despite the challenges he faced, King Saud was able to achieve many important accomplishments during his reign. However, he struggled with managing the state's finances, which led to some difficult decisions.</p>
+        <p>In 1964, King Saud was relieved from the throne, and King Faisal bin Abdulaziz was appointed as his successor. King Saud passed away in 1969, but his legacy remains in the history of Saudi Arabia.</p>
+      </div>
+    </div>
+
+    
+    <div class="profile-container">
+      <img src="الملك_فيصل-removebg-preview.png" alt="King Faisal" class="profile-image">
+      <div class="profile-text">
+        <h3>King Faisal bin Abdulaziz</h3>
+        <p>King Faisal bin Abdulaziz was the third king of Saudi Arabia, ascending to the throne in 1964 after King Saud. King Faisal was known for his efforts to develop the country and enhance its position on the international stage.</p>
+        <p>During his reign, he implemented comprehensive reforms in the economy and education, focusing on infrastructure development. He played a prominent role in strengthening relations with Arab and international countries.</p>
+        <p>His reign was marked by enhancing security and stability in the Kingdom, and he launched many social programs that contributed to improving living standards.</p>
+        <p>King Faisal passed away in 1975, but his legacy remains alive in the hearts of the Saudi people.</p>
+      </div>
+    </div>
+
+   
+    <div class="profile-container">
+      <img src="الملك_خالد-removebg-preview.png" alt="King Khalid" class="profile-image">
+      <div class="profile-text">
+        <h3>King Khalid bin Abdulaziz</h3>
+        <p>King Khalid bin Abdulaziz was the fourth king of Saudi Arabia, ascending to the throne in 1975 after King Faisal. He was known for his wisdom and commitment to social and economic development.</p>
+        <p>During his reign, the Kingdom witnessed a significant economic boom thanks to increased oil production, and the government invested in infrastructure projects.</p>
+        <p>King Khalid focused on education and health, opening many schools and hospitals across the Kingdom.</p>
+        <p>He passed away in 1982, but he left a great legacy of achievements.</p>
+      </div>
+    </div>
+
+  
+    <div class="profile-container">
+      <img src="ملك_فهد-removebg-preview.png" alt="King Fahd" class="profile-image">
+      <div class="profile-text">
+        <h3>King Fahd bin Abdulaziz</h3>
+        <p>King Fahd bin Abdulaziz was the fifth king of Saudi Arabia, ascending to the throne in 1982 after King Khalid. He was known for developing many major projects in the Kingdom, including infrastructure and economic projects.</p>
+        <p>Under his leadership, many government institutions and agencies were established that contributed to comprehensive development.</p>
+        <p>King Fahd was also attentive to foreign affairs, playing a prominent role in enhancing relations with other countries and participating in many Arab and international summits.</p>
+        <p>He passed away in 2005, but he left a significant mark on the history of the Kingdom.</p>
+      </div>
+    </div>
+
+   
+    <div class="profile-container">
+      <img src="الملك_عبدالله-removebg-preview.png" alt="King Abdullah" class="profile-image">
+      <div class="profile-text">
+        <h3>King Abdullah bin Abdulaziz</h3>
+        <p>King Abdullah bin Abdulaziz was the sixth king of Saudi Arabia, ascending to the throne in 2005 after King Fahd. He was known for his reformist vision and commitment to social and economic development.</p>
+        <p>During his reign, the Kingdom saw significant changes in various fields, including education, health, and the economy.</p>
+        <p>King Abdullah was a strong supporter of women's rights, launching many initiatives to enhance their role in society.</p>
+        <p>He passed away in 2015, but his legacy remains alive in the hearts of the citizens.</p>
+      </div>
+    </div>
+
+ 
+    <div class="profile-container">
+      <img src="الملك_سلمان-removebg-preview.png" alt="King Salman" class="profile-image">
+      <div class="profile-text">
+        <h3>King Salman bin Abdulaziz</h3>
+        <p>King Salman bin Abdulaziz is the seventh king of Saudi Arabia, ascending to the throne in 2015 after King Abdullah. He is known for his commitment to developing the Kingdom and enhancing its position on the international stage.</p>
+        <p>During his reign, many major projects were launched, including Vision 2030, which aims to diversify the Saudi economy and reduce dependence on oil.</p>
+        <p>King Salman has also focused on strengthening relations with other countries and achieving stability in the region.</p>
+        <p>He continues to work towards the development and progress of the Kingdom,He is the current king, may God prolong his life.</p>
+      </div>
+    </div>
+
+
+
+<div class="profile-container">
+    <img src="الامير_محمد_2-removebg-preview.png" alt="Mohammed bin Salman" class="profile-image">
+    <div class="profile-text">
+      <h3>Crown Prince Mohammed bin Salman Al Saud</h3>
+      <p>Crown Prince Mohammed bin Salman, often referred to as MBS, is the Deputy Prime Minister and Minister of Defense of Saudi Arabia. He became Crown Prince in June 2017, following the elevation of his father, King Salman bin Abdulaziz.</p>
+      <p>Known for his dynamic leadership style, Crown Prince Mohammed has been a pivotal figure in Saudi Arabia’s modernization efforts. His vision for the Kingdom is centered around economic diversification, reducing reliance on oil, and enhancing the quality of life for Saudi citizens.</p>
+      <p>One of his hallmark initiatives is Vision 2030, which aims to transform the Saudi economy by promoting sectors such as tourism, entertainment, and technology. His leadership has also emphasized social reforms, including increased rights for women and fostering a more vibrant cultural scene in the Kingdom.</p>
+    </div>
+  </div>
+  
+  
+  <div class="profile-container">
+    <img src="الشعار-removebg-preview.png" alt="Vision 2030" class="profile-image">
+    <div class="profile-text">
+      <h3>Vision 2030</h3>
+      <p>Vision 2030 is a strategic framework launched in April 2016 by Crown Prince Mohammed bin Salman. It aims to reduce Saudi Arabia's dependence on oil and diversify its economy, while also enhancing public service sectors such as health, education, and infrastructure.</p>
+      <p>This ambitious plan includes numerous initiatives to promote investment and innovation, with goals to create a more sustainable and resilient economy. Vision 2030 also focuses on improving the quality of life for citizens through various social reforms, including increasing recreational and cultural opportunities.</p>
+      <p>Key projects under Vision 2030 include the development of NEOM, a futuristic city that aims to be a hub for innovation and sustainable living, as well as the expansion of the entertainment sector to attract both local and international tourists.</p>
+      <p>Through Vision 2030, Saudi Arabia seeks to position itself as a global leader in various fields, enhancing its international standing and fostering a new era of growth and prosperity for its citizens.</p>
+    </div>
+  </div>
+
+  </div>
+
+  <footer>
+    <p>&copy; Programming: AbdulRahman AlShammari</p>
+    <p>The Kingdom of Saudi Arabia</p>
+    <p>Email: <a href="mailto:Alshammri095@gmail.com" style="color: #458052;">Alshammri095@gmail.com</a></p>
+    <div>
+      <a href="https://t.co/ovHXe1dJTz"><img class="icon" src="twitter.png" alt="Twitter"></a>
+      <a href="https://t.co/M0ad1kuBm8"><img class="icon" src="linkedin.png" alt="LinkedIn"></a>
+      <a href="https://github.com/Abdulrahman-A9"><img class="icon" src="github.png" alt="GitHub"></a>
+    </div>
+  </footer>
+</body>
+</html>
